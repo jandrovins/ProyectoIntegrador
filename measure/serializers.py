@@ -4,4 +4,4 @@ from .models import Measure
 class MeasureSerializer(serializers.ModelSerializer):
     class Meta:
         model = Measure
-        fields = ('id', 'type', 'value', 'scale')
+        fields = ('id', 'type', 'value', 'scale', 'codigo', 'latitud', 'longitud', 'area', 'terreno')
