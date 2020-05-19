@@ -12,9 +12,6 @@ TERRENOS_VALIDOS = [
 
 class Measure(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    type = models.CharField(verbose_name='type', max_length=20, default="distance", null=True, blank=True)
-    value = models.IntegerField(verbose_name='valor', default="0", null=True, blank=True)
-    scale = models.CharField(max_length=1, default="m", null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     updated = models.DateTimeField(auto_now=True, null=True, blank=True)
     codigo = models.CharField(max_length=30, null=True, blank=True)
